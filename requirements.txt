@@ -1,0 +1,14 @@
+openai
+streamlit
+pydantic
+langchain
+cohere
+faiss-cpu
+docx2txt
+pillow
+pypdf
+tenacity
+python-dotenv
+pytest
+flake8
+isort
