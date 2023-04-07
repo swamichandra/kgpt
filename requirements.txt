@@ -12,3 +12,4 @@ python-dotenv
 pytest
 flake8
 isort
+PyMuPDF
