@@ -3,7 +3,7 @@ from PIL import Image
 
 
 ##### Introduction
-image = Image.open('./howitworks.png')
+image = Image.open('howitworks.png')
 st.image(image, use_column_width='always', width=50, caption='This app demonstrates how to use OpenAI\'s GPT-3 to answer questions on your own document, by using document embeddings and retrieval.')
 st.markdown(""" 
             
