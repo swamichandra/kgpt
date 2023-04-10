@@ -8,7 +8,8 @@ chain_type = "refine"
 
 # [OpenAI]
 embedding_model = "text-embedding-ada-002"
-text_model = "text-davinci-003"
+#text_model = "text-davinci-003"
+text_model = "gpt-4"
 temperature = 0.4
 max_tokens = 300
 top_p = 1
