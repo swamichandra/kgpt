@@ -33,26 +33,7 @@ st.markdown(""" <style>
 footer {visibility: hidden;}
 </style> """, unsafe_allow_html=True)
 padding = 0
-st.markdown(f""" <style>
 
-    div.stButton > button {{
-        
-        cursor:pointer;outline:0;display:inline-block;font-weight:400;line-height:1.5;text-align:center;background-color:transparent;border:2px solid transparent;padding:6px 12px;font-size:1rem;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;color:#bf470a;border-color:#bf470a; display:block; margin: 0 auto;
-        
-    }}
-    div.stButton > button:hover {{
-        color:#fff;background-color:#bf470a;border-color:#bf470a
-    }}
-
-    .small-font {{
-        font-size: 9px !important;
-    }}
-    .reportview-container .main .block-container{{
-        padding-top: {padding}rem;
-        padding-right: {padding}rem;
-        padding-left: {padding}rem;
-        padding-bottom: {padding}rem;
-    }} </style> """, unsafe_allow_html=True)
 
 with open( "style.css" ) as css: st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
     
