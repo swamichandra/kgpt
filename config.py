@@ -2,7 +2,7 @@ VERBOSE_MODE = "Disable"
 
 # [Chain]
 chunk_size = 800
-chunk_overlap = 0
+chunk_overlap = 20
 separator = "\n"
 chain_type = "refine"
 
