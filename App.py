@@ -81,6 +81,7 @@ TABULAR_INPUT_FILE_FLAG = False
 index = None
 doc = None
 if uploaded_file is not None:
+    st.cache_data.clear(self)
     if uploaded_file.name.endswith(".pdf"):
         doc = parse_pdf(uploaded_file)
         #st.write(type(doc))
