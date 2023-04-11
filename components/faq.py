@@ -21,7 +21,7 @@ def faq():
     """.format(temp=config.text_model))
     #st.text(pdf.metadata)
     
-    radio_options = ["Enable", "Disable"]
+    radio_options = ["Disable", "Enable"]
     # verbose settings
     config.VERBOSE_MODE = st.radio("Verbose Mode", options=radio_options, horizontal=True, )  #index=radio_options.index(config.VERBOSE_MODE))
     #config.VERBOSE_MODE = st.select_slider("Verbose Mode:", radio_options)
