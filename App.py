@@ -70,7 +70,7 @@ st.header("✴️ GPT on your Document")
 sidebar()
 
 placeholder_upload = st.empty()
-st.cache_data.clear()
+#st.cache_data.clear()
 with placeholder_upload.container():
     uploaded_file = st.file_uploader(
         "Upload a pdf, docx, or txt file. Ask questions and interact.",
