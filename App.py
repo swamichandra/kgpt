@@ -70,6 +70,7 @@ st.header("✴️ GPT on your Document")
 sidebar()
 
 placeholder_upload = st.empty()
+st.cache_data.clear()
 with placeholder_upload.container():
     uploaded_file = st.file_uploader(
         "Upload a pdf, docx, or txt file. Ask questions and interact.",
@@ -81,7 +82,6 @@ TABULAR_INPUT_FILE_FLAG = False
 index = None
 doc = None
 if uploaded_file is not None:
-    st.cache_data.clear()
     if uploaded_file.name.endswith(".pdf"):
         doc = parse_pdf(uploaded_file)
         #st.write(type(doc))
