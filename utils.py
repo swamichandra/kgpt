@@ -26,6 +26,11 @@ from embeddings import OpenAIEmbeddings
 from prompts import STUFF_PROMPT, template
 import config
 
+def clear_all_cache():
+    with st.spinner("Clearing all previous cache 🍪"):
+        st.cache_data.clear()
+        #st.write('')
+    return
 
 #@st.experimental_memo()
 @st.cache_data()
@@ -66,6 +71,7 @@ def parse_pdf2(file: BytesIO) -> List[str]:
 #@st.experimental_memo()
 @st.cache_data()
 def parse_pdf(file: BytesIO) -> List[str]:
+    clear_all_cache()
     pdf = PdfReader(file)
     meta = pdf.metadata
     
