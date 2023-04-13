@@ -35,6 +35,7 @@ def clear_all_cache():
 #@st.experimental_memo()
 @st.cache_data()
 def parse_docx(file: BytesIO) -> str:
+    clear_all_cache()
     text = docx2txt.process(file)
     # Remove multiple newlines
     text = re.sub(r"\n\s*\n", "\n\n", text)
@@ -94,6 +95,7 @@ def parse_pdf(file: BytesIO) -> List[str]:
 #@st.experimental_memo()
 @st.cache_data()
 def parse_txt(file: BytesIO) -> str:
+    clear_all_cache()
     text = file.read().decode("utf-8")
     # Remove multiple newlines
     text = re.sub(r"\n\s*\n", "\n\n", text)
